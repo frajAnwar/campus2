@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "dashboard": "لوحة التحكم",
+    "forum": "المنتدى",
+    "projects": "المشاريع",
+    "classes": "الفصول",
+    "clubs": "النوادي",
+    "leaderboard": "لوحة المتصدرين"
+  },
+  "forum": {
+    "new_post": "منشور جديد",
+    "post_types": {
+      "QUESTION": "سؤال",
+      "DISCUSSION": "نقاش",
+      "SHOWCASE": "عرض",
+      "NOTE_SHARE": "مشاركة ملاحظات"
+    },
+    "visibility": {
+      "PUBLIC": "عام",
+      "UNIVERSITY": "الجامعة",
+      "CLASS": "الفصل"
+    },
+    "summarize": "تلخيص الموضوع",
+    "no_posts": "لا توجد منشورات بعد. كن أول من يبدأ النقاش!"
+  },
+  "actions": {
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "submit": "إرسال",
+    "loading": "جاري التحميل...",
+    "confirm": "هل أنت متأكد؟"
+  },
+  "errors": {
+    "not_authenticated": "يجب تسجيل الدخول",
+    "not_authorized": "ليس لديك إذن",
+    "not_found": "غير موجود",
+    "generic": "حدث خطأ. يرجى المحاولة مرة أخرى."
+  },
+  "gamification": {
+    "rank_up": "لقد ترقيت إلى {rank}!",
+    "xp_earned": "+{amount} نقطة خبرة"
+  }
+}

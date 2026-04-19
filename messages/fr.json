@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "dashboard": "Tableau de bord",
+    "forum": "Forum",
+    "projects": "Projets",
+    "classes": "Classes",
+    "clubs": "Clubs",
+    "leaderboard": "Classement"
+  },
+  "forum": {
+    "new_post": "Nouveau post",
+    "post_types": {
+      "QUESTION": "Question",
+      "DISCUSSION": "Discussion",
+      "SHOWCASE": "Vitrine",
+      "NOTE_SHARE": "Partage de notes"
+    },
+    "visibility": {
+      "PUBLIC": "Public",
+      "UNIVERSITY": "Universite",
+      "CLASS": "Classe"
+    },
+    "summarize": "Resumer le fil",
+    "no_posts": "Aucun post. Soyez le premier a discuter !"
+  },
+  "actions": {
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "submit": "Soumettre",
+    "loading": "Chargement...",
+    "confirm": "Etes-vous sur ?"
+  },
+  "errors": {
+    "not_authenticated": "Vous devez etre connecte",
+    "not_authorized": "Vous n'avez pas la permission",
+    "not_found": "Non trouve",
+    "generic": "Une erreur est survenue. Reessayez."
+  },
+  "gamification": {
+    "rank_up": "Vous avez atteint le rang {rank} !",
+    "xp_earned": "+{amount} XP"
+  }
+}

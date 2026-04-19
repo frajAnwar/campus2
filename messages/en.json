@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "forum": "Forum",
+    "projects": "Projects",
+    "classes": "Classes",
+    "clubs": "Clubs",
+    "leaderboard": "Leaderboard"
+  },
+  "forum": {
+    "new_post": "New Post",
+    "post_types": {
+      "QUESTION": "Question",
+      "DISCUSSION": "Discussion",
+      "SHOWCASE": "Showcase",
+      "NOTE_SHARE": "Note Share"
+    },
+    "visibility": {
+      "PUBLIC": "Public",
+      "UNIVERSITY": "University",
+      "CLASS": "Class"
+    },
+    "summarize": "Summarize thread",
+    "no_posts": "No posts yet. Be the first to start a discussion!"
+  },
+  "actions": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "submit": "Submit",
+    "loading": "Loading...",
+    "confirm": "Are you sure?"
+  },
+  "errors": {
+    "not_authenticated": "You must be logged in",
+    "not_authorized": "You don't have permission",
+    "not_found": "Not found",
+    "generic": "Something went wrong. Please try again."
+  },
+  "gamification": {
+    "rank_up": "You ranked up to {rank}!",
+    "xp_earned": "+{amount} XP"
+  }
+}
