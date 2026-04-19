@@ -17,10 +17,16 @@ export default async function proxy(req: NextRequest) {
   }
 
   // 2. Check Auth Status
+  // We check both NEXTAUTH_SECRET and AUTH_SECRET to be safe
+  const secret = process.env.NEXTAUTH_SECRET || process.env.AUTH_SECRET;
+  
   const token = await getToken({
     req,
-    secret: process.env.NEXTAUTH_SECRET || process.env.AUTH_SECRET,
+    secret,
+    // On Vercel (HTTPS), we need to ensure we look for the secure cookie
+    secureCookie: process.env.NODE_ENV === "production" || req.url.startsWith("https://"),
   });
+  
   const isLoggedIn = !!token;
 
   // 3. Check if the path is public
@@ -28,14 +34,16 @@ export default async function proxy(req: NextRequest) {
     (p) => pathname === p || pathname.startsWith(p + "/")
   );
 
-  // 4. Redirect logged-in users away from auth pages (login/signup) to dashboard
-  // But allow them to see the landing page (/)
+  // 4. Redirect logged-in users away from auth pages to dashboard
   if (isLoggedIn && (pathname === "/login" || pathname === "/signup")) {
     return NextResponse.redirect(new URL("/dashboard", req.url));
   }
 
   // 5. Redirect unauthenticated users to login if they try to access private pages
   if (!isPublic && !isLoggedIn) {
+    // If we're already on a public path but not exactly /, allow it
+    if (pathname === "/") return NextResponse.next();
+    
     return NextResponse.redirect(new URL("/login", req.url));
   }
 
